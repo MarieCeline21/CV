@@ -1,35 +1,51 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-a{
-  color: white;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+
+a {
+  color: #00796b;
   text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
 }
-header{
+
+header {
   background-color: aquamarine;
+  padding: 30px 0 20px 0;
 }
-.nav{
+
+.nav {
   display: flex;
   justify-content: space-between;
 }
-.nav-ul{
+
+.nav-ul {
   display: flex;
 }
-.nav-link{
+
+.nav-link {
   margin: 10px;
 }
-.section1{
+
+.section1 {
   position: relative;
 }
-.pre{
+
+.pre {
   width: 100%;
 }
-.content{
+
+.content {
   padding: 15px;
   background-color: rgba(240, 248, 255, 0.294);
   border-radius: 0.5em;
@@ -40,21 +56,103 @@ header{
   transform: translate(50%, 50%);
   overflow: hidden;
 }
-.card{
+
+.CV-Container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.CV-Container img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background: #fff;
+  border: 2px solid #009688;
+}
+
+.nom {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+.Role {
+  font-size: 1.2em;
+  color: #00695c;
+  margin-bottom: 0.5em;
+}
+
+.coordonnées {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+main.contenu {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 0.7em;
+  box-shadow: 0 2px 12px #0001;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h3 {
+  color: #009688;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+  list-style: disc inside;
+}
+
+.card {
   display: flex;
-  color: whit#00000e;
+  color: #00000e;
   background-color: rgba(255, 255, 255, 0.148);
-  margin: 15px;
+  margin: 15px 0;
   padding: 10px;
   border-radius: 0.5em;
-  box-shadow: #0000001f 5px 5px ;
+  box-shadow: #0000001f 5px 5px;
 }
-.card-img{
+
+.card-img {
   margin: 5px;
   border-radius: 0.5em;
   width: 30%;
   height: 100%;
 }
-.footer{
+
+.footer {
   text-align: center;
+  margin-top: 30px;
+  color: #888;
+  font-size: 0.95em;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  main.contenu {
+    padding: 10px;
+  }
+  .CV-Container {
+    padding: 0 10px;
+  }
+  section {
+    margin-bottom: 18px;
+  }
 }
